@@ -1,0 +1,605 @@
+@media (max-width:768px){
+
+    
+        
+  .section-article__text--education{
+    grid-template-columns: 1fr;
+  }
+    
+    /*iconos de redes sociales*/
+    
+    .sociali{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+        
+      }
+      .social-iconsi{
+        width: 175px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 11.5px;
+        margin-left: 20px;
+        
+      }
+    
+      .social-iconsi a{
+        color: #ffffff;
+        font-size: 21px;
+      }
+      .social-iconsi a:hover{
+        color:rgb(8, 1, 37) ;
+      
+      }
+      .social-iconsi a:active{
+        color:rgb(8, 1, 37) ;
+        filter: blur(1px);
+
+      }
+    
+      /*Menu de navegacion de la pagina*/
+    
+      .menui{
+    margin-left: 30px;
+     grid-column: 2;
+     margin-top: 0;
+      }
+  
+    .menu-navi{
+  grid-column: 2;
+  grid-row: 1;
+  list-style: none;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-right: 35px;
+
+max-width: 900px;
+
+}
+      
+      .menu-navi{
+        
+     height: calc(64% - 46px);
+     flex-direction: column;
+     margin-right: 35px;
+     background-color: #000000;
+     position: fixed;
+     top: 46px;
+     
+     width: 65%;
+     max-width: 900px;
+     padding: 22px;
+
+     overflow-y: auto;
+     border-radius: 45px;
+     border: 3px solid rgb(2, 1, 54);
+     border-top: 4.4px solid  #1500d6;;
+     border-top-right-radius: 0;
+     border-top-left-radius: 0;
+     border-bottom-left-radius: 0;
+     justify-content: space-evenly;
+
+     left: 0;
+     transition: left 0.4s;
+    }
+    .toggler-nav{
+      background: none;
+      border: none;
+      font-size: 20.5px;
+      padding: 0 20px;
+      display: block;
+      margin-top: 12.9px;
+      margin-left: 23.5px;
+    }
+    
+      .menu-nav__itemi{
+    
+    display: inline-block;
+    padding: 7px 12.9px;
+    margin: 0;
+    
+   
+    } /*rgb(14, 168, 168)*/
+    
+      .menu-nav__itemi a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: arial;
+      margin: 0;
+      }
+      
+     
+      .menu-nav__itemi a::after{
+       content: "  ";
+      }
+      .menu-nav__itemi a:hover{
+        
+        color: aqua;
+        font-size: 29.6px;
+        transition: 0.57s;
+      }
+      .menu-nav__itemi a:active{
+        color: aqua;
+        font-size: 29.6px;
+        transition: 0.57s;
+      }
+
+      .menu-nav__itemi button{
+        color: rgb(255, 255, 255);
+        
+        
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: arial;
+        margin: 0 
+        
+      }
+    
+    
+      
+    
+      .menu-nav__itemi button:hover{
+        color: aqua;
+            font-size: 29.6px;
+            transition: 0.57s;
+        
+      }
+    
+      .menu-nav__itemi button:active{
+        color: aqua;
+        font-size: 29.6px;
+            transition: 0.57s;
+        
+      }
+
+      .registro-usuario{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: arial;
+      margin: 0;
+       
+      }
+    
+      .registro-usuario:active{
+        color: aqua;
+        font-size: 29.6px;
+        transition: 0.57s;
+      }
+      .registro-usuario:hover{
+        color: aqua;
+        font-size: 29.6px;
+        transition: 0.57s;
+      }
+/*#bfbed8;*/
+
+/*Menu Desplegable*/
+
+
+      .menu-nav__desplegable{
+        left: 100%;
+      }
+    .section-text__class_strong{
+      color: aqua;
+      font-weight: 900;
+      font-size: 29px;
+     letter-spacing: 5.8px;
+    }
+/*Login y futuro formulario*/
+
+      .registro-usuario{
+        
+        
+          background-color: black;
+          text-transform: uppercase;
+         padding: 0;
+        margin: 0;
+        
+      }
+    
+      .registro-usuario a:active{
+        color: rgb(2, 3, 56);
+      }
+      .registro-usuario a:hover{
+        color: rgb(2, 3, 56);
+        padding: 6px;
+        padding-left: 14px;
+        padding-right: 14px;
+        margin: 2px;
+        border: 5.78px solid rgb(0, 4, 255);
+        border-radius: 10px;
+      }
+      
+      /*imagen de argentina programa*/
+    
+      .nav-logoi{
+        height: 54px;
+        width: 120px;
+        margin-top: 0;
+        display: inline-block;
+        
+        border-radius: 20px;
+       grid-row: 3;
+      }
+    
+      .nav-logoi img{
+        margin-top: 6.2px;
+        display: inline-block;
+         border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        
+      }
+      .nav-logoi img:hover{
+        filter: blur(1.5px);
+      }
+      .nav-logoi img:active{
+        filter: blur(3px);
+      }
+   
+
+
+.section-text img{
+  
+  width: 107px;
+height: 107px;
+  margin-top: 62.1px;
+    }
+
+    .section-portfolio{
+      font-size: 15px;
+      margin-top: 70px;
+      font-family: Arial, Helvetica, sans-serif;
+      width: auto;
+    }
+    .section-personal{
+  margin-top: 19px;
+  margin-left: 15px;
+    }
+ 
+  .personal-ocupation{
+    margin-top: 20px;
+    margin-left: 12px;
+    font-size: 18.4px;
+  }
+
+
+
+
+/*corregi3*/
+
+
+
+
+
+/*index*/
+
+
+.button_index a:active{
+  color: aqua;
+    font-size: 43.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.47s;
+}
+.button_index:active{
+  
+  transition: 0.14s;
+  box-shadow: 0 0 20px #080072,
+  0 0 60px #080072,
+  0 0 140px #080072,
+  0 0 260px #080072;
+}
+.button_index a:hover{
+  color: aqua;
+  font-size: 43.8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.47s;
+}
+.button_index:hover{
+  
+  transition: 0.14s;
+  box-shadow: 0 0 10px #080072,
+  0 0 30px #080072,
+  0 0 70px #080072,
+  0 0 130px #080072;
+}
+
+
+
+
+
+
+
+.text_index-back h1{
+  
+  letter-spacing: 6.5px;
+  line-height: 45px;
+  margin-top: 62px;
+   font-size: 42px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.footi{
+  display: grid;
+  grid-column: 2;
+  grid-row: 4;
+  margin-top: 140.9px;
+background-color: #05013a;
+  width: 100%;
+  height: 190px;
+ 
+}
+
+
+
+/*Cabecera Indexxx*/
+
+
+.headeri{
+  background: #000000;
+box-shadow: 7px 10px 10px
+#010231;
+display: grid;
+width: 100%;
+height: 49.9px;
+border-radius: 25px;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+border-bottom-left-radius: 0;
+grid-template-columns: 1fr 1fr;
+
+/*barra de navegacion fija*/
+
+position: fixed;
+  
+}
+
+/*iconos de redes sociales*/
+
+.sociali{
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+  grid-column: 1;
+  justify-self: auto;
+  margin-right: 0px;
+margin-top: 0px;
+height: auto;
+}
+.social-iconsi{
+  width: 175px;
+      height: auto;
+      
+     
+      margin-left: 20px;
+  margin-right: 10px;
+  
+}
+.social-iconsi a{
+  color: #ffffff;
+  font-size: 21px;
+}
+
+
+
+
+
+/*Menu de navegacion*/
+
+
+
+
+
+
+
+
+
+
+/*Logo*/
+
+
+
+
+.section-principaly {
+  display: grid;
+  grid-template-columns: 0.5fr 12fr 0.5fr;
+  width: 100%;
+  margin-top: 110px;
+
+}
+
+
+/*lista de experiencia*/
+
+
+
+.section-article__text{
+  margin-left: 30px;
+  margin-bottom: 100px;
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: arial ;
+  list-style-type: square ;
+  color: #1f0ccc;
+   display: block;
+ }
+ .Section-list-text_1{
+color: #000000;
+font-size: 18.9px;
+font-weight: 600px;
+
+margin-top: 0;
+ }
+
+ .Section-list-text_2{
+  color: #000000;
+  font-size: 18.9px;
+  font-weight: 600px;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 0;
+}
+
+.section_article__img{
+  display: inline-block;
+  border: 3.5px solid rgb(17, 3, 80);
+  margin-left: 10px;
+  border-radius: 15px;
+  grid-column: 1;
+  
+ }
+
+
+
+ /*proyectos*/
+
+
+
+ .section-proyect{
+  display: grid;
+    padding: 15px;
+    max-width: 32%;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-left: 0;
+ }
+
+ .section-proyect__text{
+  margin-left: 45px;
+ }
+
+
+
+ .section-article__text--education{
+  margin-left: 10px;
+  margin-bottom: 100px;
+  margin-top: 60px;
+  font-size: 18.9px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  list-style-type: circle ;
+  font-weight: 600;
+
+ }
+ .Section-list-text{
+  color: #000000;
+  font-size: 18.9px;
+  font-weight: 600px;
+  margin-top: 45px;
+   }
+
+   .section-text__class{
+    grid-column: 2;
+    text-align: center;
+    align-items: center;
+    margin-top: 108px;
+    font-weight: 700;
+    color: rgb(11, 143, 143);
+    letter-spacing: 4px;
+    font-size: 26px;
+    }
+
+
+
+
+
+
+
+/*proyectos*/
+
+.section_article__entra{
+  display: inline-block;
+  padding: 10px 14.5px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffffff;
+  color: #001d6d;
+  font-weight: 850;
+  font-size: 20px;
+  border: 1px solid #000000;
+  border-radius: 110px;
+  width :100%;
+ }
+ .section-proyect__text{
+  text-align: center;
+  margin:0;
+ }
+
+
+
+
+
+    /*Tabla tecnologias*/
+
+   
+    
+    
+            .table-head{
+              font-size: 25px;
+              letter-spacing: 2px;
+            }
+ 
+            .table-name__tecnology{
+      font-size: 17.8px;
+      margin-top: 100px;
+      border-bottom: 2px solid rgb(54, 54, 54);
+            }
+    
+            .table-name__nivel{
+    font-size: 19.5px;
+    color: #0038d3;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgb(54, 54, 54);
+            }
+            .table-posthead{
+              border-bottom: 2px solid rgb(54, 54, 54);
+            }
+    
+            .table-img__border{
+    
+              border-bottom: 2px solid rgb(54, 54, 54);
+            }
+
+
+
+
+
+
+
+
+
+            /*Servicios*/
+
+           
+        
+              
+        
+              .service-limaki{
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 10fr 1fr;
+                margin-top: 88px;
+                
+              }
+
+
+
+              
+
+              
+              
+}

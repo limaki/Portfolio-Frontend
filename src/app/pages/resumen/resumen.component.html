@@ -1,0 +1,397 @@
+
+
+
+
+<br>
+<br>
+<main class="section-principaly">
+                
+    <div class="section-text">
+        <p id="Text-initial" class="section-text__class-resume text-center" style=" margin-top: 8%;"> <strong class="section-text__class_strong">{{myPortfolio.Resumen.resumenInitial}}</strong> <i class="bi bi-send-x-fill button-edit" data-bs-toggle="modal" data-bs-target="#ModalEditBannerResume" style="color:aliceblue"></i></p>
+    </div>
+    <div class="modal fade" id="ModalEditBannerResume" tabindex="-1" aria-labelledby="exampleModalLabele" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modalContent">
+          <div class="modal-header">
+            <h4 class="modal-title text-center"d="exampleModalLabele" style="margin-left: 4%; color: whitesmoke;">Agregar skill</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           <div class="mb-6">
+              <label for="exampleFormControlTextarea1" class="form-label">Imagen del baner</label>
+              <input class="form-control" type="text" id="formFileMultiple" rows="1"  #boxBanerResume>
+            </div>
+           <div class="mb-6">
+              <label for="exampleFormControlTextarea1" class="form-label">Texto del baner</label>
+              <input class="form-control" type="text" id="formFileMultiple" rows="1"  #boxTextBanerResume>
+            </div>
+            
+           
+           <div class="modal-footer">
+            <button type="button" class="buttonProyectAgreege" data-bs-dismiss="modal">Cerrar</button>
+             <button type="button" class="buttonProyectAgreegeTwo" data-bs-dismiss="modal" 
+            (click)="ModifBanerResume(boxBanerResume.value)" (click)="ModifBanerResume(boxTextBanerResume.value)" boxBanerResume>Agregar</button> 
+           </div> 
+        </div>
+      </div> 
+    </div> 
+  </div> 
+
+</main>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col">
+      <img id="imageBluePerson" [src]="myPortfolio.Resumen.imageBluePerson" alt="" width="100%" style="border: 3.5px solid aqua">
+      <img id="imageDescription" src="../../../assets/imageses.jpg" alt="" width="100%" height="350px" style="border: 3.5px solid aqua; display: none;">
+    </div>
+
+    <div class="col">
+      
+    </div>
+  </div>
+</div>
+
+
+<p class="font-principaly">{{myPortfolio.Resumen.textDescribing}} <br> {{myPortfolio.Resumen.textDescribingTwo}}</p>
+<!-- (click)="DeleteTwoImgBlue()" --> 
+<br>
+<i class="bi bi-send-x-fill button-edit" (click)="DeleteTwoTextDescribing()" style="font-size: 44px;"></i> <i class="bi bi-send-fill button-edit" (click)="EditTwoTextDescribing()" style="font-size: 44px;"> </i><p id="DescriptionButtonText" style="color:grey; font-size: 25px"> Editar texto</p>
+   <p  id="TextDescription" class="fw-normal fs-5" style="color: #757575; display: none" >Cuentanos un poco de tí</p>
+  <div style="display: none;" class="edit-text" id="ButtonDeleteInput">
+    <input style="margin-left: 20px;" type="text"   (keyup.enter)="update(boxDescription.value)" (blur)="update(boxDescription.value)" #boxDescription><i class="bi bi-x-circle-fill button-edit" (click)="DeleteInputTextDescribe()"></i>
+  </div>
+  <br>
+  <i class="bi bi-send-x-fill button-edit" (click)="DeleteTwoImgDescribing()" style="font-size: 44px;"></i> <i class="bi bi-send-fill button-edit" (click)="EditTwoImgDescribing()" style="font-size: 44px;"> </i><p id="DescriptionButtonImg" style="color:grey; font-size: 25px"> Editar imagen</p>
+   <p  id="UrlImage" class="fw-normal fs-5" style="color: #757575; display: none" >Ingrese Imagen Url</p>
+  <div style="display: none;" class="edit-text" id="ButtonAndInputTwo">
+    <input style="margin-left: 20px;" type="text"  #boxImage><i class="bi bi-x-circle-fill button-edit" (click)="DeleteInputImgDescribe()"></i>
+  </div>
+
+
+
+
+
+
+<section class="section-portfolio">
+<article>
+
+    <div class="container">
+  <div class="row">
+   <div class="col-1">
+
+   </div>
+    <div class="col-10" id="Box-habilities">
+      
+      <p  class="text-normal fs-4 text-center" style="color: grey; font-size: 14px;">&nbsp; &nbsp;  {{myPortfolio.Resumen.SkillsTranslate}}</p>
+      <br>
+<div *ngIf="EliminatedSkill">
+  <div id="botonCross">
+    <i  (click)="EliminatedSkilMethod()" class="bi bi-dash-circle-fill button-edit" style="font-size: 40px;"></i>
+  </div>
+  
+<p class="section-habilities">{{myPortfolio.Resumen.Skills}} <strong style="color: blue;"> &nbsp; {{myPortfolio.Resumen.SkillsPorcentaj}}</strong></p>
+<div class="progress">
+
+<div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+</div>
+</div>
+
+<div *ngIf="EliminatedSkillTwo">
+  
+  <div id="botonCrossTwo">
+    <i  (click)="EliminatedSkilMethodTwo()" class="bi bi-dash-circle-fill button-edit" style="font-size: 40px;"></i>
+  </div>
+<p class="section-habilities">{{myPortfolio.Resumen.SkillsTwo}}<strong style="color: blue;"> &nbsp; {{myPortfolio.Resumen.SkillsPorcentajTwo}}</strong></p>
+<div class="progress">
+
+<div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%" ></div>
+</div>
+</div>
+
+
+<div *ngIf="EliminatedSkillThree">
+  <div id="botonCrossThree" style="display: none">
+  <i  (click)="EliminatedSkilMethodThree()" class="bi bi-dash-circle-fill button-edit" style="font-size: 40px;"></i>
+</div>
+<p id="TextSkillsOpen" class="section-habilities"style =" display: none;">{{myPortfolio.Resumen.SkillsThreeEdit}}<strong style="color: blue; "> &nbsp; {{myPortfolio.Resumen.SkillsPorcentajThreeEdit | percent }}</strong></p>
+<div id="barProgressThreeEditbar" class="progress" style="color: blue; display: none;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;height: 16px;" ></div>
+</div>  
+<div id="barProgressThreeEditbar2" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 55%;height: 16px;" ></div>
+</div> 
+<div id="barProgressThreeEditbar3" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;height: 16px ;" ></div>
+</div> 
+<div id="barProgressThreeEditbar4" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 95%; height: 16px;" ></div>
+</div>  
+</div>   
+
+
+
+<div *ngIf="EliminatedSkillFour">
+  <div id="botonCrossFour" style="display: none">
+    <i  (click)="EliminatedSkilMethodFour()" class="bi bi-dash-circle-fill button-edit" style="font-size: 40px;"></i>
+  </div>
+<p id="TextSkillsOpenTwo" class="section-habilities"style =" display: none;">{{myPortfolio.Resumen.SkillsFourEdit}}<strong style="color: blue; "> &nbsp;  {{  myPortfolio.Resumen.SkillsPorcentajFourEdit+'%' }}</strong></p>
+<div id="barProgressThreeEditbarTwo" class="progress" style="color: blue; display: none;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;height: 16px;" ></div>
+</div>  
+<div id="barProgressThreeEditbar2Two" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 55%;height: 16px;" ></div>
+</div> 
+<div id="barProgressThreeEditbar3Two" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;height: 16px ;" ></div>
+</div> 
+<div id="barProgressThreeEditbar4Two" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 95%; height: 16px;" ></div>
+</div>  
+</div>
+
+
+<div *ngIf="EliminatedSkillFive">
+  <div id="botonCrossFive" style="display: none">
+    <i  (click)="EliminatedSkilMethodFive()" class="bi bi-dash-circle-fill button-edit" style="font-size: 40px;"></i>
+  </div>
+<p id="TextSkillsOpenThree" class="section-habilities"style =" display: none;">{{myPortfolio.Resumen.SkillsFiveEdit}}<strong style="color: blue; "> &nbsp;  {{myPortfolio.Resumen.SkillsPorcentajFiveEdit +'%'}}</strong></p>
+<div id="barProgressThreeEditbarThree" class="progress" style="color: blue; display: none;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;height: 16px;" ></div>
+</div>  
+<div id="barProgressThreeEditbar2Three" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 55%;height: 16px;" ></div>
+</div> 
+<div id="barProgressThreeEditbar3Three" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;height: 16px ;" ></div>
+</div> 
+<div id="barProgressThreeEditbar4Three" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 95%; height: 16px;" ></div>
+</div> 
+</div>
+
+
+<div *ngIf="EliminatedSkillSix">
+  <div id="botonCrossSix" style="display: none">
+    <i  (click)="EliminatedSkilMethodSix()" class="bi bi-dash-circle-fill button-edit" style="font-size: 40px;"></i>
+  </div>
+<p id="TextSkillsOpenFour" class="section-habilities"style =" display: none;">{{myPortfolio.Resumen.SkillsSixEdit}}<strong style="color: blue; "> &nbsp;  {{myPortfolio.Resumen.SkillsPorcentajSixEdit +'%'}}</strong></p>
+<div id="barProgressThreeEditbarFour" class="progress" style="color: blue; display: none;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;height: 16px;" ></div>
+</div>  
+<div id="barProgressThreeEditbar2Four" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 55%;height: 16px;" ></div>
+</div> 
+<div id="barProgressThreeEditbar3Four" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;height: 16px ;" ></div>
+</div> 
+<div id="barProgressThreeEditbar4Four" class="progress" style="color: blue; display: none;">
+
+  <div class="progress-bar progress-bar-striped progress-bar-animated mama" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 95%; height: 16px;" ></div>
+</div> 
+</div>
+
+  
+  </div>
+  
+<div class="col">
+
+      
+  </div>
+</div>
+</div>
+
+
+
+<i *ngIf="ButtonModalSkills" class="bi bi-plus-circle-fill button-edit" style="font-size: 48px;"
+  data-bs-toggle="modal" data-bs-target="#exampleModalskills"></i>
+  <i *ngIf="ButtonModalSkills2" class="bi bi-plus-circle-fill button-edit" style="font-size: 48px;"
+   data-bs-toggle="modal" data-bs-target="#exampleModalskillsTwo"></i>
+   <i *ngIf="ButtonModalSkills3" class="bi bi-plus-circle-fill button-edit" style="font-size: 48px;"
+    data-bs-toggle="modal" data-bs-target="#exampleModalskillsThree"></i>
+    
+    <i *ngIf="ButtonModalSkills4" class="bi bi-plus-circle-fill button-edit" style="font-size: 48px;" 
+    data-bs-toggle="modal" data-bs-target="#exampleModalskillsFour"></i>
+     
+     
+
+ <div class="modal fade" id="exampleModalskills" tabindex="-1" aria-labelledby="exampleModalLabele" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modalContent">
+      <div class="modal-header">
+        <h4 class="modal-title text-center"d="exampleModalLabele" style="margin-left: 4%; color: whitesmoke;">Agregar skill</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+       <!-- (keyup.enter)="addTwo(boxTwo.value)" (blur)="addTwo(boxTwo.value)" -->
+       <div class="mb-3">
+          <label for="formFileMultiple" class="form-label">Nombre skill</label>
+          <input class="form-control" type="text" id="formFileMultiple" rows="1"  #boxSkill>
+        </div>
+        <div class="mb-6">
+          <label for="exampleFormControlTextarea1" class="form-label">Porcentaje barra</label>
+          <input class="form-control" type="number" id="formFileMultiple" rows="1"  #boxSkillPorcentaj>
+        </div> 
+        <br>
+        <div *ngIf="ButtonOcult">
+         <button (click)="BotonOpenSkills()" class="button-skills">Barra corta</button>
+         <button (click)="BotonOpenSkills2()" class="button-skills">Barra media</button>
+         <button (click)="BotonOpenSkills3()" class="button-skills">Barra larga</button>
+         <button (click)="BotonOpenSkills4()" class="button-skills">Barra completa</button>
+        </div>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="buttonProyectAgreege" data-bs-dismiss="modal" >Cerrar</button>
+         <button type="button" class="buttonProyectAgreegeTwo" data-bs-dismiss="modal" (click)="agreegePorcentaj(boxSkill.value)" 
+          (click)="agreegePorcentajSkills(boxSkillPorcentaj.value)" (click)="openButonCross()">Agregar</button> 
+       </div>
+    </div>
+  </div> 
+</div>   
+<div class="modal fade" id="exampleModalskillsTwo" tabindex="-1" aria-labelledby="exampleModalLabele" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modalContent">
+      <div class="modal-header">
+        <h4 class="modal-title text-center"d="exampleModalLabele" style="margin-left: 4%; color: whitesmoke;">Agregar skill</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+       <!-- (keyup.enter)="addTwo(boxTwo.value)" (blur)="addTwo(boxTwo.value)" -->
+       <div class="mb-3">
+          <label for="formFileMultiple" class="form-label">Nombre skill</label>
+          <input class="form-control" type="text" id="formFileMultiple" rows="1"  #boxSkillTwo>
+        </div>
+        <div class="mb-6">
+          <label for="exampleFormControlTextarea1" class="form-label">Porcentaje barra</label>
+          <input class="form-control" type="number" id="formFileMultiple" rows="1"  #boxSkillPorcentajTwo>
+        </div> 
+        <br>
+        <div *ngIf="ButtonOcultTwo">
+         <button (click)="BotonOpenSkillsTwo()" class="button-skills">Barra corta</button>
+         <button (click)="BotonOpenSkills2Two()" class="button-skills">Barra media</button>
+         <button (click)="BotonOpenSkills3Two()" class="button-skills">Barra larga</button>
+         <button (click)="BotonOpenSkills4Two()" class="button-skills">Barra completa</button>
+        </div>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="buttonProyectAgreege" data-bs-dismiss="modal" >Cerrar</button>
+         <button type="button" class="buttonProyectAgreegeTwo" data-bs-dismiss="modal" (click)="agreegePorcentajTwo(boxSkillTwo.value)" 
+          (click)="agreegePorcentajSkillsTwo(boxSkillPorcentajTwo.value)" (click)="openButonCrossTwo()">Agregar</button> 
+       </div>
+    </div>
+  </div> 
+</div>   
+<div class="modal fade" id="exampleModalskillsThree" tabindex="-1" aria-labelledby="exampleModalLabele" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modalContent">
+      <div class="modal-header">
+        <h4 class="modal-title text-center"d="exampleModalLabele" style="margin-left: 4%; color: whitesmoke;">Agregar skill</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+       <!-- (keyup.enter)="addTwo(boxTwo.value)" (blur)="addTwo(boxTwo.value)" -->
+       <div class="mb-3">
+          <label for="formFileMultiple" class="form-label">Nombre skill</label>
+          <input class="form-control" type="text" id="formFileMultiple" rows="1"  #boxSkillThree>
+        </div>
+        <div class="mb-6">
+          <label for="exampleFormControlTextarea1" class="form-label">Porcentaje barra</label>
+          <input class="form-control" type="number" id="formFileMultiple" rows="1"  #boxSkillPorcentajThree>
+        </div> 
+        <br>
+        <div>
+          <div *ngIf="ButtonOcultThree">
+         <button (click)="BotonOpenSkillsThree()" class="button-skills">Barra corta</button>
+         <button (click)="BotonOpenSkills2Three()" class="button-skills">Barra media</button>
+         <button (click)="BotonOpenSkills3Three()" class="button-skills">Barra larga</button>
+         <button (click)="BotonOpenSkills4Three()" class="button-skills">Barra completa</button>
+          </div>
+        </div>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="buttonProyectAgreege" data-bs-dismiss="modal" >Cerrar</button>
+         <button type="button" class="buttonProyectAgreegeTwo" data-bs-dismiss="modal" (click)="agreegePorcentajThree(boxSkillThree.value)" 
+          (click)="agreegePorcentajSkillsThree(boxSkillPorcentajThree.value)" (click)="openButonCrossThree()">Agregar</button> 
+       </div>
+    </div>
+  </div> 
+</div>   
+<div class="modal fade" id="exampleModalskillsFour" tabindex="-1" aria-labelledby="exampleModalLabele" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modalContent">
+      <div class="modal-header">
+        <h4 class="modal-title text-center"d="exampleModalLabele" style="margin-left: 4%; color: whitesmoke;">Agregar skill</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+       <!-- (keyup.enter)="addTwo(boxTwo.value)" (blur)="addTwo(boxTwo.value)" -->
+       <div class="mb-3">
+          <label for="formFileMultiple" class="form-label">Nombre skill</label>
+          <input class="form-control" type="text" id="formFileMultiple" rows="1"  #boxSkillFour>
+        </div>
+        <div class="mb-6">
+          <label for="exampleFormControlTextarea1" class="form-label">Porcentaje barra</label>
+          <input class="form-control" type="number" id="formFileMultiple" rows="1"  #boxSkillPorcentajFour>
+        </div> 
+        <br>
+        <div>
+          <div *ngIf="ButtonOcultFour">
+         <button (click)="BotonOpenSkillsFour()" class="button-skills">Barra corta</button>
+         <button (click)="BotonOpenSkills2Four()" class="button-skills">Barra media</button>
+         <button (click)="BotonOpenSkills3Four()" class="button-skills">Barra larga</button>
+         <button (click)="BotonOpenSkills4Four()" class="button-skills">Barra completa</button>
+        </div>
+        </div>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="buttonProyectAgreege" data-bs-dismiss="modal" >Cerrar</button>
+         <button type="button" class="buttonProyectAgreegeTwo" data-bs-dismiss="modal" (click)="agreegePorcentajFour(boxSkill.value)" 
+          (click)="agreegePorcentajSkillsFour(boxSkillPorcentaj.value)" (click)="openButonCrossFour()">Agregar</button> 
+       </div>
+    </div>
+  </div> 
+</div>   
+<br>
+<br>
+<br>
+
+</article> 
+
+
+
+
+
+<!-- Proyectos -->
+
+
+
+                                                          
+                                      
+                                                                              
+ 
+</section>
+ <app-proyects></app-proyects>
+<app-form></app-form>
+<app-footer></app-footer>
+
+

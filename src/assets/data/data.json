@@ -1,0 +1,118 @@
+{
+
+"homeBlack":{
+
+          "text": "No busques más.",
+          "textTwo": " Ya nos Encontraste!",
+          "button": "Entrar!"
+
+},
+
+"header" :{
+
+     "imgLogo" : "../../../assets/ArgProgram.png",
+     "nav" : "Proyectos",
+     "navTwo" : "Tecnologías",
+     "navThree" : "Contactos",
+     "navFour" : "LOGIN"
+},
+
+       "background": "background: ",
+       
+       "serviceInitial": "",
+       "service": "PRESENTACIÓN",
+       
+       "name": "Diego Ulises Torrez",
+       "imagePerson": "../../../assets/imagenes/diego - Editado.png",
+       "ocupation": "Programador Full Stack.",
+     
+
+"Resumen":{
+
+     
+    
+
+    "imageBluePerson": "../../../assets/imagenes/perfil.png",
+    "textDescribing": "Hola buenas! me llamo Diego y me dedico al desarrollo y programación web hace más de un año el cual la experiencia me ha permitido perfeccionarme y agilizar la creacion de webs para dispositivos, dinamicas y con servidores u bases de datos adaptado a sus necesidades.",
+   "textDescribingTwo": "No dude en elegirme! ",
+
+
+
+   "SkillsTittle": "Hard Skills & Soft Skills",
+   "SkillsTranslate": "Habilidades fuertes y blandas",
+   "Skills" : "Resolucion problemas logicos:",
+   "SkillsPorcentaj" : "65%",
+   "SkillsTwo" : "Amabilidad y proactividad:",
+   "SkillsPorcentajTwo" : "95%",
+
+   "SkillsThreeEdit" : "",
+   "SkillsPorcentajThreeEdit" : "",
+
+   "SkillsFourEdit" : "",
+   "SkillsPorcentajFourEdit" : "",
+
+   "SkillsFiveEdit" : "",
+   "SkillsPorcentajFiveEdit" : "",
+
+   "SkillsSixEdit" : "",
+   "SkillsPorcentajSixEdit" : "",
+
+
+
+
+
+   "tittleProyects" : "Proyectos",
+
+   "imgProyect" : "../../../assets/imagenes/boots&angular.png",
+   "tittleProyect" : "Programación en Ángular & Bootstrap",
+   "textProyect" : "Página de antropología biologica hecha con frameworks de javascript y css",
+   "buttonProyect" : "Ver Más",
+
+   "imgProyectTwo" : "../../../assets/html-css-javascript.jpg",
+   "tittleProyectTwo" : "Programación y Diseño web con Html Css & Javascript",
+   "textProyectTwo" : "Calculadora de área perímetro y radio en figuras geométricas.",
+   "textProyectTwo1" : "diseño maquetado por html y css, dinamismo y funcionalidad por javascript",
+   "buttonProyectTwo" : "Ver Más",
+
+   "imgProyectThree" : "../../../assets/imagenes/fullStack.jpg",
+   "tittleProyectThree" : "Programación Full Stack con Java & Ángular",
+   "textProyectThree" : "Pagina web curricular que incluye tanto diseño web, programación vista a usuario, programación de servidor, base de datos y Api´s",
+   "buttonProyectThree" : "Ver Más",
+
+   "imgProyectCreateFour" : "../../../assets/imagenes/kant.jpg",
+   "tittleProyectFour" : "holaaaa",
+   "textProyectFour" : "",
+   "buttonProyectFour" : "Ver Más",
+
+   "imgProyectFive" : "../../../assets/imagenes/schop.jpg",
+   "tittleProyectFive" : "",
+   "textProyectFive" : "",
+   "buttonProyectFive" : "Ver Más",
+
+   "imgProyectSix" : "../../../assets/imagenes/xdd.jpeg",
+   "tittleProyectSix" : "",
+   "textProyectSix" : "",
+   "buttonProyectSix" : "Ver Más",
+
+
+
+   "footerTextFirst" : "© Copyright ",
+   "footerTextSecond" : "2022",
+   "footerTextThreed" : "CATO´S",
+   "footerTextFourth" : " Inc.",
+
+   "backgroundFooter" : "background: "
+
+},
+       
+"Services":{
+     "value":"hola",
+     "serviceResume": "SERVICIOS"
+
+
+}
+
+
+
+
+}

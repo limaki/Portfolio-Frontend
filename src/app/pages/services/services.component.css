@@ -1,0 +1,12 @@
+.section-text__classServi{
+
+    margin-top: 10%;
+}
+
+@media (max-width: 768px){
+    
+.section-text__classServi {
+    margin-top: 25%;
+}
+
+}

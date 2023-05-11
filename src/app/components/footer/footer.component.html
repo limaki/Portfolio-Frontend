@@ -1,0 +1,51 @@
+<br>
+<br>
+<br>
+
+<i class="bi bi-send-fill button-edit"  style="font-size: 44px;" data-bs-toggle="modal" data-bs-target="#ModalFooter"> </i>
+
+<footer class="foot" [style]="myPortfolio.Resumen.backgroundFooter">
+   
+    <div class="foot-page">
+    <p class="foot-page__text">{{myPortfolio.Resumen.footerTextFirst}}<em class="foot-page__text-lima">{{myPortfolio.Resumen.footerTextSecond}} {{myPortfolio.Resumen.footerTextThreed}}</em>{{myPortfolio.Resumen.footerTextFourth}}</p> 
+    </div>
+            </footer>
+
+
+
+
+
+            <div class="modal fade" id="ModalFooter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modalContent">
+                    <div class="modal-header">
+                      <h4 class="modal-title text-center"d="exampleModalLabel" style="margin-left: 4%; color: whitesmoke;">Editar footer(pie)</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                     
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Nombre Licencia</label>
+                        <input class="form-control" type="text" id="formFileMultiple" rows="1"   #boxOne>
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Nombre Companía</label>
+                        <input class="form-control" type="text" id="formFileMultiple" rows="1"   #boxTwo>
+                      </div>
+                      <div style="height: 20px">
+
+                      </div>
+                      <!-- <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Color de fondo (En inglés) *Solo tiene un uso</label>
+                        <input class="form-control" type="text" id="formFileMultiple" rows="1"   #boxThree>
+                      </div> -->
+                    <!-- (click)="AgreegeFooterColor(boxThree.value)" -->
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="buttonProyectAgreege" data-bs-dismiss="modal" >Cerrar</button>
+                      <button type="button" class="buttonProyectAgreegeTwo" data-bs-dismiss="modal" (click)="AgreegeFooter(boxOne.value)" (click)="AgreegeFooterTwo(boxTwo.value)"  (click)="DeleteWordsFooter()">Agregar</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              
